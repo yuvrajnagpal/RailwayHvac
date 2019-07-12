@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        xmlns:tools="http://schemas.android.com/tools"
+                                        android:id="@+id/drawer_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:fitsSystemWindows="true"
+                                        tools:openDrawer="start">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar android:layout_width="match_parent"
+                                           android:background="@color/colorPrimaryDark"
+                                           android:layout_height="wrap_content">
+
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_dehaze_black_24dp"
+                       android:id="@+id/open_drawer"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:textColor="#fff"
+                      android:text="RDC"
+                      android:textSize="24sp"
+                      android:layout_marginLeft="160dp"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+
+        <Button android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Cooling"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_height="150dp" android:id="@+id/cooling_button"/>
+        <Button android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Heating"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_height="150dp"/>
+        <Button android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Comp.Selection"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_height="150dp"/>
+        <Button android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="Air and Ref.Properties"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:layout_height="150dp"/>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+<android.support.design.widget.NavigationView android:layout_width="wrap_content"
+                                              android:layout_height="match_parent"
+                                              android:fitsSystemWindows="true"
+                                              android:layout_gravity="start"
+
+                                              android:background="@color/colorPrimaryDark">
+
+
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+
+
+    <include layout="@layout/nav_header" android:layout_gravity="center" android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"/>
+
+
+        <android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+                                                android:layout_marginTop="50dp"
+                                                android:layout_height="match_parent" android:id="@+id/recycler_view">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

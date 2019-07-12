@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<shape
+android:shape="rectangle">
+
+    <stroke android:color="@color/white"
+    android:width="2dp"/>
+
+
+    <solid android:color="@color/colorPrimaryDark"/>
+
+    <size android:width="40dp"
+          android:height="40dp"/>
+
+
+</shape>
+
+    <item>
+
+        <bitmap android:gravity="center|right" android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+    </item>
+
+
+</selector>
